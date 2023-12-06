@@ -21,9 +21,20 @@ export default {
   padding: 0;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 html,body{
   height: 100vh;
   width: 100vw;
+}
+
+body{
+  line-height: 28px;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: normal;
 }
 
 #app {

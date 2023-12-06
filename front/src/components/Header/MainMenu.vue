@@ -10,28 +10,13 @@
             {{menuNode.title}}
             </li>
           </ul>
-        </el-col>
-        <el-col :span="8"><div class="grid-content ep-bg-purple" />
-          <div class="main_menu_languageset">
 
-                <el-dropdown class="main_menu_setting"  @command="handleCommand">
-                <!-- <span class=""> -->
-                  <!-- <el-icon > -->
-                    <!-- <Setting /> -->
-                  <!-- </el-icon> -->
-                  <span class="el-dropdown-link">
-                    <el-icon  class="el-icon--right"><Setting /></el-icon>
-                  </span>
-                  
-                <template #dropdown>
-                  <el-dropdown-menu>
-                    <el-dropdown-item command="en">English</el-dropdown-item>
-                    <el-dropdown-item command="zh">中文</el-dropdown-item>
-                  </el-dropdown-menu>
-                </template>
-              </el-dropdown>
-          </div>
+          <div class="main_menu_languageset"></div>
+
+
+          
         </el-col>
+       
       </el-row>
     <div>
       </div>

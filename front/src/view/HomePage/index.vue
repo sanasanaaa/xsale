@@ -1,16 +1,18 @@
 <template>
   <div>
    <Carousel />
-   <div style="height: 1000px;"></div>
+   <ServiceCard />
   </div>
 </template>
 <script>
 
 import Carousel from '../../components/Carousel'
+import ServiceCard from '../../components/serviceCard'
 export default {
   name: 'home-page',
   components: {
-    Carousel
+    Carousel,
+    ServiceCard
   }
 
 }
