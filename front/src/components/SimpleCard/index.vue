@@ -37,8 +37,8 @@
         .car_img{
             overflow: hidden;
             position: relative;
-            height: 350px;
-            width: 233px;
+            height: 233px;
+            width: 350px;
             z-index: 2;
         }
         .text_body {

@@ -6,8 +6,9 @@
           <ul>
             <li v-for="menuNode in mainMenu"
             class="menu_item"
+            @click = '()=>go(menuNode.path)'
             :key="menuNode"  style="font-family: 'Barlow',sans-serif;font-weight: bold;font-size: 16px;font-weight" >
-            {{menuNode.title}}
+            <el-button link >{{menuNode.title}}</el-button>
             </li>
           </ul>
 
@@ -65,6 +66,11 @@ export default {
 
     handleCommand(e) {
       this.$i18n.locale = e
+    },
+
+    go(path) { 
+      console.log(path)
+        this.$router.push(path)
     }
   }
 }

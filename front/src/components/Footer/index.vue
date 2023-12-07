@@ -23,3 +23,20 @@ export default {
 };
 </script>
 
+<style lang="scss">
+
+footer{
+    height:475px;
+    width: 100%;
+    background-color: #000;
+    
+    .footer_copyright{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 0px;
+    }
+    
+}
+
+</style>
+

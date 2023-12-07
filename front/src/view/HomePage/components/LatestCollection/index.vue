@@ -6,7 +6,7 @@
 			</div>
 			<div class="row_collection">
 				<el-row :gutter="20">
-					<el-col v-for="(item,index) in cardData " :span="8" :key="index">
+					<el-col v-for="(item,index) in cardData " :xs="24" :sm="12" :md="12" :lg="8" :xl="8" :key="index">
 							<SimpleCard />
 					</el-col>
 				</el-row>
