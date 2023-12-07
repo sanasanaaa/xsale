@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 
 .top_menu{
-  background: #ff2a39 !important;
+  background: #8EC21E !important;
   width: 100%;
   display: flex;
   align-items: center;

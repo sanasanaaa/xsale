@@ -1,16 +1,16 @@
 <template>
-    <div id = "homePageServiceCard">
-        <el-row :gutter="20">
+  <div id = "homePageServiceCard">
+    <el-row :gutter="20">
 
-            <el-col v-for="(item,index) in cardData " :span="6" :key="index">
-                <ServiceCardItem :itemData="item" />
-            </el-col>
-            <el-col :span="6"></el-col>
-            <el-col :span="6"></el-col>
-            <el-col :span="6"></el-col>
-            </el-row>
-        
-    </div > 
+      <el-col v-for="(item,index) in cardData " :span="6" :key="index">
+          <ServiceCardItem :itemData="item" />
+      </el-col>
+      <!-- <el-col :span="6"></el-col>
+      <el-col :span="6"></el-col>
+      <el-col :span="6"></el-col> -->
+    </el-row>
+      
+  </div > 
 </template>
 
 <script>

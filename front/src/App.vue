@@ -37,6 +37,27 @@ body{
   font-weight: normal;
 }
 
+a {
+    text-decoration: none;
+    transition: all 0.3s linear;
+    background-color: transparent;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,4 +68,13 @@ body{
   width: 100vw;
   overflow-x: hidden;
 }
+
+.container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
+  }
 </style>
