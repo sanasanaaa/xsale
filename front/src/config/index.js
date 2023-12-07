@@ -5,7 +5,7 @@ export let mainMenuNode = [
     },
     {
         title: 'Shop',
-        path:'/shop'
+        path:'/goods'
     },
     {
         title: 'News',
