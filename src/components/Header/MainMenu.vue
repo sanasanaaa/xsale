@@ -1,6 +1,6 @@
 <template>
   <div :class="{main_menu:true}" id="main_menu">
-    <div class="main_menu_content">
+    <div class="container">
       <el-row :gutter="20">
         <el-col :span="16">
           <ul>
@@ -8,11 +8,10 @@
             class="menu_item"
             @click = '()=>go(menuNode.path)'
             :key="menuNode"  style="font-family: 'Barlow',sans-serif;font-weight: bold;font-size: 16px;font-weight" >
-            <el-button link >{{menuNode.title}}</el-button>
+            <el-button :class="['menu_item_text',path==menuNode.path?'active_mainmenu_bt':'']" link >{{menuNode.title}}</el-button>
             </li>
           </ul>
 
-          <div class="main_menu_languageset"></div>
 
 
           
@@ -38,6 +37,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.$router.currentRoute.path)
     document.getElementById('app').addEventListener('scroll', () => { 
       document.getElementById('app').scrollTop;
       let height = document.getElementById('header').getBoundingClientRect().height;
@@ -60,8 +60,25 @@ export default {
         data.push({title: this.$t(''+item.title),path:item.path})
       }
       return data
-      }
+    },
+
+
   },
+
+  watch: {
+    $route: {
+      handler: function(val, ){
+        if (val.path) { 
+          console.log(val.path)
+          this.path = val.path
+        }
+    },
+    // 深度观察监听
+    deep: true
+    },
+   
+  },
+
   methods: {
 
     handleCommand(e) {
@@ -69,7 +86,7 @@ export default {
     },
 
     go(path) { 
-      console.log(path)
+        this.path = path
         this.$router.push(path)
     }
   }
@@ -87,6 +104,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
   ul{
     height: 100%;
@@ -107,6 +125,22 @@ export default {
       font-family: 'Barlow',sans-serif;
       font-weight: bold;
       font-size: 16px;
+
+      .menu_item_text{
+        line-height: 70px;
+        font-size: 16px;
+        color: #34373b;
+        font-family: "Barlow", sans-serif;
+        font-weight: 500;
+        transition: all 300ms ease;
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+      }
+
+      .active_mainmenu_bt{
+        color:#8EC21E;
+      }
     }
   }
 

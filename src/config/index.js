@@ -1,7 +1,7 @@
 export let mainMenuNode = [
     {
-        title: 'HomePage',
-        path:'/'
+        title: 'Home',
+        path:'/home'
     },
     {
         title: 'Shop',

@@ -30,6 +30,7 @@ html,body{
   width: 100vw;
   overflow-y: auto;
   overflow-x: hidden;
+
 }
 
 body{
@@ -68,11 +69,13 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-right: calc(100% - 100vw);
-  text-align: center;
   color: #2c3e50;
-  /* height: 100vh; */
-  /* width: 100vw; */
   overflow-x: hidden;
+  --el-pagination-hover-color:#8EC21E;
+}
+
+:root{
+  --el-pagination-hover-color:#8EC21E;
 }
 
 .container{

@@ -15,7 +15,7 @@ const messages = {
 
 // 创建国际化实例
 const i18n = createI18n({
-  locale: 'zh',
+  locale: 'en',
   messages
 })
 

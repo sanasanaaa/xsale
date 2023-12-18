@@ -1,7 +1,7 @@
 let lang = { 
    
         hello: 'hello',
-        HomePage:'HomePage',
+        Home:'Home',
         Shop: 'Shop',
         News: 'News',
         AboutUs:'AboutUs'

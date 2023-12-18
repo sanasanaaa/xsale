@@ -1,5 +1,5 @@
 <template >
-    <div class="simple_card_area">
+    <div class="simple_card_area" @click="goDetail">
         <div class="car_img">
             <a href="product-details.html">
                 <img class="img-fluid" src="img/product/car-collection/car-1.jpg" alt="">
@@ -20,7 +20,20 @@
 </template>
 
 <script>
-
+export default {
+    name: 'simple_card',
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        goDetail() { 
+            
+            this.$router.push({ path: '/goodsDetail/'+'132465'})
+        }
+    },
+}
 
 </script>
 
@@ -33,6 +46,8 @@
         margin-bottom: 30px;
         box-shadow: 0px 2px 4px 0px rgba(0, 121, 175, 0.08);
         transition: all 300ms linear 0s;
+        // height: 200px;
+        // width: 150px;
 
         .car_img{
             overflow: hidden;

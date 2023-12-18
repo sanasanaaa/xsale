@@ -7,7 +7,7 @@
 			<div class="row_collection">
 				<el-row :gutter="20">
 					<el-col v-for="(item,index) in cardData " :xs="24" :sm="12" :md="12" :lg="8" :xl="8" :key="index">
-							<SimpleCard />
+						<SimpleCard />
 					</el-col>
 				</el-row>
 				<a class="main_btn" href="#" >All Cars</a>
